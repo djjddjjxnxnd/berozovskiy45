@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+  <rect width="640" height="480" fill="#f7f4ed"/>
+  <g fill="none" stroke="#deded3" stroke-width="1.5">
+    <path d="M-40 340 C 120 120, 300 560, 680 220"/>
+    <path d="M-66 362 C 120 144, 300 540, 680 250"/>
+    <path d="M-92 384 C 120 168, 300 520, 680 280"/>
+    <path d="M-118 406 C 120 192, 300 500, 680 310"/>
+    <path d="M-144 428 C 120 216, 300 480, 680 340"/>
+  </g>
+  <text x="36" y="52" class="b">НЕИЗВЕСТНЫЙ БЕРЁЗОВСКИЙ</text>
+  <text x="604" y="52" text-anchor="end" class="b" fill="#6e765d">АРХИТЕКТУРА</text>
+  
+    <g fill="none" stroke="#6e765d" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M320 66 V104 M303 82 H337"/>
+      <path d="M320 104 C 300 104 292 122 292 140 H348 C 348 122 340 104 320 104 Z"/>
+      <path d="M288 140 H352 V322 H288 Z"/>
+      <path d="M228 322 V232 H288 M352 232 H412 V322"/>
+      <path d="M216 350 H424"/>
+    </g>
+  <text x="320" y="408" class="t">Храм мученика Иоанна Воина</text>
+  <text x="604" y="452" text-anchor="end" class="s">Иллюстрация школьного проекта</text>
+  <style>
+    .t { font: 600 30px Georgia, 'Times New Roman', serif; fill: #292c29; text-anchor: middle; letter-spacing: -0.02em; }
+    .b { font: 600 13px 'Segoe UI', Arial, sans-serif; fill: #6d7068; letter-spacing: 0.14em; }
+    .s { font: 400 12px 'Segoe UI', Arial, sans-serif; fill: #a9ac9f; letter-spacing: 0.08em; }
+  </style>
+</svg>

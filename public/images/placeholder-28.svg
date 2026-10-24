@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+  <rect width="640" height="480" fill="#f7f4ed"/>
+  <g fill="none" stroke="#deded3" stroke-width="1.5">
+    <path d="M-40 340 C 120 120, 300 560, 680 220"/>
+    <path d="M-66 362 C 120 144, 300 540, 680 250"/>
+    <path d="M-92 384 C 120 168, 300 520, 680 280"/>
+    <path d="M-118 406 C 120 192, 300 500, 680 310"/>
+    <path d="M-144 428 C 120 216, 300 480, 680 340"/>
+  </g>
+  <text x="36" y="52" class="b">НЕИЗВЕСТНЫЙ БЕРЁЗОВСКИЙ</text>
+  <text x="604" y="52" text-anchor="end" class="b" fill="#984437">ПАМЯТНОЕ МЕСТО</text>
+  
+    <g fill="none" stroke="#984437" stroke-width="7" stroke-linejoin="round">
+      <polygon points="320.0,122.0 342.3,183.3 407.5,185.6 356.1,225.7 374.1,288.4 320.0,252.0 265.9,288.4 283.9,225.7 232.5,185.6 297.7,183.3"/>
+      <path d="M236 322 H404" stroke-linecap="round"/>
+    </g>
+  <text x="320" y="408" class="t">Знак первой советской шахты</text>
+  <text x="604" y="452" text-anchor="end" class="s">Иллюстрация школьного проекта</text>
+  <style>
+    .t { font: 600 30px Georgia, 'Times New Roman', serif; fill: #292c29; text-anchor: middle; letter-spacing: -0.02em; }
+    .b { font: 600 13px 'Segoe UI', Arial, sans-serif; fill: #6d7068; letter-spacing: 0.14em; }
+    .s { font: 400 12px 'Segoe UI', Arial, sans-serif; fill: #a9ac9f; letter-spacing: 0.08em; }
+  </style>
+</svg>
