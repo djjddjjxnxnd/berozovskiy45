@@ -629,3 +629,6 @@ textarea.form-control { resize: vertical; min-height: 150px; }
   .chat-launcher { left: 14px; bottom: 14px; width: 54px; height: 54px; }
   .chat-panel { left: 12px; bottom: 12px; width: calc(100vw - 24px); height: calc(100dvh - 24px); }
 }
+
+/* ===== Защита контента ===== */
+.source-guard-toast { position: fixed; left: 50%; bottom: 26px; transform: translateX(-50%); padding: 12px 20px; border-radius: 8px; background: var(--ink); color: #fff; font-size: 13px; line-height: 1.5; box-shadow: 0 12px 30px #292c2940; z-index: 1300; animation: notice-pop .25s ease; }
