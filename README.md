@@ -2,6 +2,22 @@
 
 Локальный школьный путеводитель: каталог из 32 мест, карта, история, три прогулочных маршрута, чат-гид.
 
+**Сайт онлайн:** https://djjddjjxnxnd.github.io/berozovskiy45/
+**Репозиторий:** https://github.com/djjddjjxnxnd/berozovskiy45
+
+## Как обновить сайт на GitHub Pages
+
+Исходники лежат в ветке `main`, собранная версия — в ветке `gh-pages` (с неё раздаёт GitHub Pages). После правок кода:
+
+```sh
+npm run build
+git add -A && git commit -m "описание изменений" && git push origin main
+git checkout --orphan gh-pages-new && git rm -q -r --cached . && cp -r dist/* . && git add -A .
+git commit -m "Сборка" && git push -f origin HEAD:gh-pages && git checkout -f main && git branch -D gh-pages-new
+```
+
+(проще — попросить ассистента «обнови сайт на гите», он сделает это сам)
+
 ## Запуск
 
 Откройте «ЗАПУСТИТЬ САЙТ.bat» или выполните в папке проекта:
