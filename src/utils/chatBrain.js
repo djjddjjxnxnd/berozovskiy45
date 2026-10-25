@@ -85,8 +85,10 @@ function placeCard(place, intro) {
 
 function recommend(ids, intro) {
   const places = ids.map((id) => monuments.find((m) => m.id === id)).filter(Boolean);
-  const lines = [intro, ...places.map((p) => `• ${p.cardName || p.name} — ${p.shortDesc.split('.')[0]}.`)];
-  return { lines, links: places.map((p) => ({ label: p.cardName || p.name, to: `/monument/${p.id}` })) };
+  return {
+    lines: [intro],
+    links: places.map((p) => ({ label: p.cardName || p.name, to: `/monument/${p.id}` })),
+  };
 }
 
 export function chatReply(rawText) {
@@ -178,8 +180,10 @@ export function chatReply(rawText) {
     return recommend([6, 31, 32, 7], 'Для тех, кто ищет неизведанное:');
   }
 
-  if (has(norm, ['куда сходить', 'куда пойти', 'куда пойти в выходные', 'что посмотреть', 'что посетить', 'посоветуй', 'рекоменд', 'маршрут', 'экскурс', 'выходн'])) {
-    return recommend([2, 1, 5, 10, 9], 'Вот классический набор на день в Берёзовском:');
+  // «куда лучше сходить», «куда можно пойти» — слова в любом порядке
+  if (has(norm, ['куда сходить', 'куда пойти', 'что посмотреть', 'что посетить', 'посоветуй', 'рекоменд', 'маршрут', 'экскурс', 'выходн', 'где погулять', 'куда съездить'])
+    || (has(norm, ['куда', 'где']) && has(norm, ['сходить', 'пойти', 'погулять', 'съездить', 'сходить']))) {
+    return recommend([2, 1, 5, 10, 9], 'Вот классический набор на день в Берёзовском — нажимайте на названия, чтобы узнать подробности:');
   }
 
   if (has(norm, ['спасиб', 'благодар', 'круто', 'класс', 'супер'])) {
